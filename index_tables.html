@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tables and lists</title>
 </head>
 <br>
 <h1>Some simple table</h1>
@@ -42,6 +42,7 @@
     </table>
     <hr>
     <br>
+
     <table width="40%">
         <style>
             table,
@@ -140,56 +141,67 @@
         <tr>
             <!-- 5-->
             <td rowspan="2" colspan="3">&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td style="border-color: white">&nbsp;&nbsp;&nbsp;</td>
         </tr>
         <tr>
             <!-- 6-->
             <td>&nbsp;&nbsp;&nbsp;</td>
         </tr>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
     </table>
     <hr>
-    <br>
+<br>
 
+<style>
+   ol, ul {
+    display: inline-block;
+    }
+</style>
+<div>
+     <ul >
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+
+        <ol type="1" >
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>        
+</div>
+
+<div>
+    <ol type="a">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+         <ol type="I">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+        <ol type="1" start="5">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+        <ol type="1" start="7" reversed="5">
+            <li>Item #3</li>
+            <li>Item #2</li>
+            <li>Item #1</li>
+        </ol>
+</div>      
 </body>
 
 </html>
