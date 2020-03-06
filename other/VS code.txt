@@ -1,0 +1,11 @@
+all auto complite
+auto close tag
+auto complete tag
+auto rename tag
+css peek
+html css suport
+live server
+open in browser
+path autocomplete
+prettier
+sublime text keymap
