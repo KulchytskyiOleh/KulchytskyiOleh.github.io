@@ -1,0 +1,109 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffd5d549;
+  /*grid-gap: 5px;
+    /*grid-column-gap*/
+  /*grid-row-gap*/
+  /*grid-gap */
+  grid-template-columns: 200px 1fr 200px 100px;
+  grid-template-rows: 150px 85px 1fr 100px;
+
+  grid-template-areas:
+    "header  header  header  header"
+    "nav     nav     nav     last"
+    "news    main    about   last"
+    "footer  footer  footer  last";
+}
+header {
+  grid-area: header;
+  background-color: #ffff00d0;
+}
+nav {
+  grid-area: nav;
+  background-color: #0000ffc0;
+}
+.main_sctn {
+  grid-area: main;
+  background-color: #d2691ecb;
+}
+.news_sctn {
+  grid-area: news;
+  background-color: #05ff059c;
+}
+.sctn_about {
+  grid-area: about;
+  background-color: #e9967aa2;
+}
+.last {
+  background-color: #2f4f4f;
+  grid-area: last;
+}
+.footer {
+  background-color: #b22222;
+  grid-area: footer;
+}
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 3rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    grid-template-columns: 1fr 1fr 100px;
+    grid-template-rows: 150px 85px 1fr 100px 100px;
+
+    grid-template-areas:
+      "header  header  header"
+      "nav     nav     last"
+      "main    main    last"
+      "news    about   last"
+      "footer  footer  last";
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 150px 1fr 100px 100px;
+
+    grid-template-areas:
+      "nav     header  header  header"
+      "nav     main    main    main"
+      "nav     news    about   last"
+      "nav     footer  footer  footer";
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 150px 1fr 100px 100px 100px;
+
+    grid-template-areas:
+      "nav     header"
+      "nav     main"
+      "nav     news"
+      "nav     about"
+      "nav     last"
+      "nav     footer";
+  }
+}
