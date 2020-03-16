@@ -35,7 +35,6 @@ nav > a:hover {
 /*-----*/
 article {
   padding: 15px;
-  height: 50%;
   background-color: #808080;
 }
 section {
@@ -47,10 +46,9 @@ section {
 #section-1 {
   background-color: #fff;
   height: 18vh;
-  width: 45%;
+  width: 50%;
   float: left;
 }
-#section-1>p{}
 
 #section-2 {
   background-color: cadetblue;
