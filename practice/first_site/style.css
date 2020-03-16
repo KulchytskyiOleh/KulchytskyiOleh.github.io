@@ -9,26 +9,41 @@ h2,
 h3 {
   margin: 10px 0px;
 }
-span.start_pos {
+span > h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/*span.start_pos {
   text-align: center;
 }
 span.start_pos h1 {
   margin-bottom: 15px;
-}
+}*/
+
 header {
   display: inline-block;
   width: 100%;
   background-color: #ffff99;
 }
-header span {
-  padding: 15px;
+header > span {
+  padding: 25px;
 }
 nav {
+  position: sticky;
+  top: 0;
   height: 50px;
   width: 100%;
-  background: linear-gradient(#626966, #000000);
+  background: linear-gradient(#747474, #000000);
 }
-nav.nav_properties a {
+nav > a {
+  color: #fffffff5;
+  float: left;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+/*nav.nav_properties a {
   color: #fffffff5;
   float: left;
   display: block;
@@ -38,25 +53,42 @@ nav.nav_properties a {
 }
 nav.nav_properties a:hover {
   background-color: #0f0f0fc4;
+}*/
+nav > a:hover {
+  background-color: #0f0f0fc4;
 }
-section.section_about {
+section {
   width: 100%;
 }
-div.description {
+section > div {
+  padding: 20px;
+}
+/*div.description {
   padding: 25px;
+}*/
+div > ul {
+  margin-left: 30px;
 }
-div.description ul {
+
+/*div.description ul {
   margin-left: 20px;
-}
-div.description ul li {
+}*/
+/*div.description ul li {
   margin-bottom: 5px;
+}*/
+
+div > ul > li {
+  margin-bottom: 10px;
 }
 div#about_html {
   background-color: #7ad6fd7a;
 }
 div#about_css {
-  background-color: #ffff99;
+  background-color: #ffff99b6;
 }
 div#about_js {
-  background-color: #99ff99;
+  background-color: #99ff99b2;
+}
+footer > nav > a {
+  float: right;
 }

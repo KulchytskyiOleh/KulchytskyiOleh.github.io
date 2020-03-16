@@ -2,30 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML,CSS,JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="start">
-      <span class="start_pos"
-        ><h1>Коротка інофрмація про HTML5/CSS3/JS Fundamentals</h1>
+    <header>
+      <a name="start_of_page"></a>
+      <span>
+        <h1>Коротка інофрмація про HTML5/CSS3/JS</h1>
       </span>
     </header>
-    <nav class="nav_properties">
-      <a href="#about_html">HTML</a>
-      <a href="#about_css">CSS</a>
-      <a href="#about_js">JavaScript</a>
+    <a name="html"></a>
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#js">JavaScript</a>
     </nav>
-    <section class="section_about">
-      <div id="about_html" class="description">
-        <span id="about_html" class="start_pos"><h1>HTML</h1></span>
+    <section>
+      <div id="about_html">
+        <span><h1>HTML</h1></span>
         <hr />
         <p>
           <b>Hypertext Markup Language</b> (HTML)(Мова розмітки гіпертекстових
           документів) — стандартна мова розмітки для створення веб-сторінок і
-          веб-додатків. З Cascading Style Sheets (<a href="#about_css">CSS</a>)і
-          <a href="#about_js">JavaScript</a> , вона утворює тріаду основних
-          технологій для World Wide Web.
+          веб-додатків. З Cascading Style Sheets (<a href="#css">CSS</a>)і
+          <a href="#js">JavaScript</a> , вона утворює тріаду основних технологій
+          для World Wide Web.
         </p>
 
         <p>
@@ -64,15 +67,14 @@
           <a href="https://uk.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
           може вбудовувати програми, написані на мові сценаріїв, наприклад
           JavaScript, що впливає на поведінку та вміст веб-сторінок. Включення<a
-            href="#about_css"
+            href="#css"
             >CSS</a
           >
           визначає вигляд і компонування вмісту. World Wide Web Consortium
           <a href="https://www.w3.org/">(W3C)</a> , які супроводжують як
           <a href="https://uk.wikipedia.org/wiki/HTML">HTML</a> і
-          <a href="#about_css">CSS</a> стандартів, заохочує використання
-          <a href="#about_css">CSS</a> над явним презентаційним HTML з 1997
-          року.
+          <a href="#css">CSS</a> стандартів, заохочує використання
+          <a href="#css">CSS</a> над явним презентаційним HTML з 1997 року.
         </p>
 
         <p>
@@ -102,7 +104,7 @@
           гіпертекстову систему документів.
         </p>
         <p>
-          Вже наприкінці 1990 року він розробив <a href="#about_html">HTML</a> і
+          Вже наприкінці 1990 року він розробив <a href="#html">HTML</a> і
           написав браузер та серверне програмне забезпечення для запропонованої
           системи. У цьому ж році Тім Бернерс-Лі та Роберт Кайо, інженер
           інформаційних систем CERN, подали спільну заявку на фінансування
@@ -221,14 +223,15 @@
             XHTML 2.0 (розробка припинена в 2010 році): ця версія вже не
             базується на HTML 4.01 і додає деякі нові теги. Буде завершено
             розділення між представленням та вмістом.
+            <a name="css"></a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="about_section">
-      <div id="about_css" class="description">
-        <span id="about_css" class="start_pos"><h1>CSS</h1></span>
+    <section>
+      <div id="about_css">
+        <span id=""><h1>CSS</h1></span>
         <hr />
         <p>
           <b>CSS</b>(англ. <b><i>Cascading Style Sheets</i></b
@@ -238,11 +241,11 @@
         </p>
         <p>
           CSS є основною технологією всесвітньої павутини, поряд із
-          <a href="#about_html">HTML</a> та <a href="#about_js">JavaScript</a>.
+          <a href="#html">HTML</a> та <a href="#js">JavaScript</a>.
         </p>
         <p>
           Найчастіше CSS використовують для візуальної презентації сторінок,
-          написаних <a href="#about_html">HTML</a> та XHTML, але формат CSS може
+          написаних <a href="#html">HTML</a> та XHTML, але формат CSS може
           застосовуватися до інших видів XML-документів.
         </p>
         <p>
@@ -345,13 +348,14 @@
         <p>
           Властивості в списку оформлюються у вигляді назва властивості,
           двокрапка (:), значення, крапка з комою (;).
+          <a name="js"></a>
         </p>
       </div>
     </section>
 
-    <section class="about_section">
-      <div id="about_js" class="description">
-        <span id="about_js" class="start_pos"><h1>JavaScript</h1></span>
+    <section>
+      <div id="about_js">
+        <span><h1>JavaScript</h1></span>
         <hr />
         <p>
           <b>JavaScript</b>(JS) — динамічна, об'єктно-орієнтована прототипна
@@ -528,11 +532,11 @@
     </section>
 
     <footer>
-      <nav class="nav_properties">
-        <a href="#start_html">HTML</a>
-        <a href="#about_css">CSS</a>
-        <a href="#about_js">JavaScript</a>
-        <a href="#start">На початок</a>
+      <nav>
+        <!-- <a href="#start_html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#about_js">JavaScript</a>-->
+        <a href="#start_of_page">На початок</a>
       </nav>
     </footer>
   </body>
