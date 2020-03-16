@@ -23,9 +23,9 @@ body {
 
   grid-template-areas:
     "header  header  header  header"
-    "nav     nav     nav     last"
-    "news    main    about   last"
-    "footer  footer  footer  last";
+    "nav     nav     nav     nav"
+    "news    main    about   about"
+    "footer  footer  footer  footer";
 }
 header {
   grid-area: header;
@@ -47,10 +47,7 @@ nav {
   grid-area: about;
   background-color: #e9967aa2;
 }
-.last {
-  background-color: #2f4f4f;
-  grid-area: last;
-}
+
 .footer {
   background-color: #b22222;
   grid-area: footer;
@@ -63,7 +60,7 @@ span {
   font-size: 3rem;
 }
 
-@media (max-width: 1280px) {
+/*@media (max-width: 1280px) {
   .container {
     width: 1024px;
     grid-template-columns: 1fr 1fr 100px;
@@ -81,7 +78,7 @@ span {
 @media (max-width: 1024px) {
   .container {
     width: 768px;
-    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-columns: 100px 1fr 1fr 75px;
     grid-template-rows: 150px 1fr 100px 100px;
 
     grid-template-areas:
@@ -107,3 +104,4 @@ span {
       "nav     footer";
   }
 }
+*/
