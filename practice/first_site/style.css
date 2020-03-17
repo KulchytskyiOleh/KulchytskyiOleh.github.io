@@ -14,15 +14,6 @@ span > h1 {
   margin: 25px auto;
 }
 
-/*
-span.start_pos {
-  text-align: center;
-}
-span.start_pos h1 {
-  margin-bottom: 15px;
-}
-*/
-
 header {
   background-image: url(https://ak2.picdn.net/shutterstock/videos/1733212/thumb/1.jpg);
   background-size: cover;
@@ -49,19 +40,6 @@ nav > a {
   padding: 15px 25px;
   text-decoration: none;
 }
-
-/*
-nav.nav_properties a {
-  color: #fffffff5;
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
-}
-nav.nav_properties a:hover {
-  background-color: #0f0f0fc4;
-}*/
 
 #about_html > img {
   float: right;
@@ -91,19 +69,10 @@ section {
 section > div {
   padding: 20px;
 }
-/*div.description {
-  padding: 25px;
-}*/
+
 div > ul {
   margin-left: 30px;
 }
-
-/*div.description ul {
-  margin-left: 20px;
-}*/
-/*div.description ul li {
-  margin-bottom: 5px;
-}*/
 
 div > ul > li {
   margin-bottom: 10px;
