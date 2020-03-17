@@ -63,7 +63,6 @@ nav.nav_properties a:hover {
   background-color: #0f0f0fc4;
 }*/
 
-
 #about_html > img {
   float: right;
 }
@@ -78,9 +77,8 @@ nav.nav_properties a:hover {
   height: 128px;
 }
 nav > a:hover {
-  background-color:#bebebe;
+  background-color: #bebebe;
   color: #000000;
-
 }
 article {
   padding: 10px;
