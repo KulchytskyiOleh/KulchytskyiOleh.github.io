@@ -24,9 +24,14 @@ span.start_pos h1 {
 */
 
 header {
+  background-image: url(https://ak2.picdn.net/shutterstock/videos/1733212/thumb/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
   width: 100%;
   background-color: #ffff99;
+  color: #ffffff;
 }
 header > span {
   padding: 50px;
@@ -56,13 +61,34 @@ nav.nav_properties a {
 }
 nav.nav_properties a:hover {
   background-color: #0f0f0fc4;
+}*/
+
+
+#about_html > img {
+  float: right;
 }
-*/
+#about_css > img {
+  float: left;
+  width: 128px;
+  height: 128px;
+}
+#about_js > img {
+  float: right;
+  width: 128px;
+  height: 128px;
+}
 nav > a:hover {
-  background-color: #0f0f0fc4;
+  background-color:#bebebe;
+  color: #000000;
+
+}
+article {
+  padding: 10px;
+  background-image: url(https://wallpaperplay.com/walls/full/a/f/3/77446.jpg);
 }
 section {
   width: 100%;
+  padding-bottom: 15px;
 }
 section > div {
   padding: 20px;
@@ -85,13 +111,13 @@ div > ul > li {
   margin-bottom: 10px;
 }
 div#about_html {
-  background-color: #7ad6fd7a;
+  background-color: #d8d6d6;
 }
 div#about_css {
-  background-color: #ffff99b6;
+  background-color: #fcfcac;
 }
 div#about_js {
-  background-color: #99ff99b2;
+  background-color: #a3ffa3;
 }
 footer > nav > a {
   float: right;

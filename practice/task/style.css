@@ -43,11 +43,16 @@ section {
   display: inline-block;
 }
 
+p#text {
+  font-size: 1.1em;
+}
+
 #section-1 {
   background-color: #fff;
   height: 18vh;
   width: 50%;
   float: left;
+  overflow-y: hidden;
 }
 
 #section-2 {
