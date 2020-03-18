@@ -93,7 +93,7 @@ article > section#content ul {
 }
 article > section#other {
   grid-area: other;
-  background-color: #f5f5f5;
+  background-color: #f3ecec;
 }
 /*article > section#other>img{
   height: 128px;
