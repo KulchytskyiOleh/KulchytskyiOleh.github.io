@@ -1,12 +1,20 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1,
-p {
-  color: black;
+a{
+  text-decoration: none;
+}
+h1 {
   text-align: center;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 10px 0px;
 }
 
 nav {
@@ -14,14 +22,16 @@ nav {
   top: 0;
 }
 
+header {
+  background-image: url(https://ak2.picdn.net/shutterstock/videos/1733212/thumb/1.jpg);
+}
+header > h1 {
+  color: #f1f1f1;
+}
 .container {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto;
-
-  /*grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 50px 85vh 50px;*/
-
   grid-template-areas:
     "header header header header"
     "nav nav nav nav"
@@ -29,9 +39,9 @@ nav {
     "footer footer footer footer";
 }
 .header {
-  background-color: #ffffff;
+  color: #f1f1f1;
   grid-area: header;
-  padding: 3%;
+  padding: 1%;
 }
 .nav {
   padding: 0.5%;
@@ -39,6 +49,7 @@ nav {
   grid-area: nav;
 }
 nav > a {
+  display: block;
   color: white;
   padding: 5px;
   margin: 10px 15px;
@@ -46,8 +57,8 @@ nav > a {
   text-decoration: none;
 }
 nav > a:hover {
-  color: #ffffff;
-  background-color: #808080;
+  color: #000000;
+  background-color: #ffffff;
 }
 nav > a#about {
   float: right;
@@ -57,54 +68,101 @@ nav > a#about {
   grid-area: article;
   background-color: #deb887;
   display: grid;
-  /*grid-template-columns:20px repeat(2, 1fr);*/
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 25% 65% 10%;
   grid-template-rows: auto;
   grid-template-areas:
-    "content news other"
-    "content news other"
-    "content news other";
+    "content html  other"
+    " .      css   other"
+    " .       js   other";
+  align-content: space-between;
 }
 article > section {
-  padding: 2%;
+  padding: 5%;
 }
-article > section#news {
-  grid-area: news;
-  background-color: #f5f5f5;
+article > section > h1 {
+}
+article > section#about_html {
+  grid-area: html;
+  background-color: #e3e2de;
+}
+article > section#about_css {
+  grid-area: css;
+  background-color: #e9e8e8;
+}
+article > section#about_js {
+  grid-area: js;
+  background-color: #f1f1f1;
 }
 article > section > div {
-  margin-bottom: 1em;
+  margin-bottom: 1%;
 }
 
 article > section#content {
+  padding: 1%;
   grid-area: content;
-  background-color:#f5f5f5;
+  background-color: #def2f1;
 }
 article > section#content ul {
-  border: 1px solid black;
+  margin: 1%;
+  border: 1px solid #000000;
+  border-radius: 4px;
   list-style-type: none;
 }
+article > section > div > img {
+  max-width: 100%;
+  height: auto;
+}
+#about_html > img {
+  float: right;
+}
+#about_css > img {
+  float: left;
+  width: 128px;
+  height: 128px;
+}
+#about_js > img {
+  float: right;
+  width: 128px;
+  height: 128px;
+}
+div > ul {
+  margin-left: 6%;
+}
 
+div > ul > li {
+  margin-bottom: 3%;
+}
 #content ul > li {
-  padding: 2%;
+  padding: 3% 10%;
 }
 #content ul > li + li {
   padding: 3% 2% 2% 10%;
 }
 article > section#other {
+  margin: 0;
+  padding: 0;
+  display: grid;
   grid-area: other;
-  background-color: #f3ecec;
+  background-color: #8699ac;
 }
-/*article > section#other>img{
-  height: 128px;
-  width: 128px;
+div#to-top {
+  align-self: flex-end ;
+  justify-self: center;
 }
-*/
+.material-icons{
+font-size: 48px !important; 
+margin-bottom: 15px;
+color:#ffffff;
+}
+.material-icons:hover{
+  color: #5f5f5f;
+}
 .footer {
-  padding: 2%;
+  padding: 1%;
   grid-area: footer;
   background-color: #5f5f5f;
 }
 footer > div > p {
   color: #f0ffff;
+  text-align: center;
 }

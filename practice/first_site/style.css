@@ -9,6 +9,8 @@ h2,
 h3 {
   margin: 10px 0px;
 }
+
+
 span > h1 {
   text-align: center;
   margin: 25px auto;
