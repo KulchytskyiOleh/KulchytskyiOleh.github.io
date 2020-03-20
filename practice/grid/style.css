@@ -4,9 +4,7 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-a{
-  text-decoration: none;
-}
+
 h1 {
   text-align: center;
 }
@@ -14,24 +12,17 @@ p,
 h1,
 h2,
 h3 {
-  margin: 10px 0px;
-}
-
-nav {
-  position: sticky;
-  top: 0;
+  margin: 15px 0px;
 }
 
 header {
   background-image: url(https://ak2.picdn.net/shutterstock/videos/1733212/thumb/1.jpg);
 }
-header > h1 {
-  color: #f1f1f1;
-}
 .container {
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
+  /*   grid-template-rows: auto; */
+  grid-auto-columns: minmax(10px, auto);
+  /*  grid-template-columns: auto; */
   grid-template-areas:
     "header header header header"
     "nav nav nav nav"
@@ -41,32 +32,53 @@ header > h1 {
 .header {
   color: #f1f1f1;
   grid-area: header;
-  padding: 1%;
+  padding: 1.5%;
+  font-size: 1.5em;
+  color: #f1f1f1;
 }
 .nav {
-  padding: 0.5%;
+  position: sticky;
+  top: 0;
   background-color: #5f5f5f;
   grid-area: nav;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas: "hm  nw  ct . . . at";
 }
-nav > a {
-  display: block;
-  color: white;
-  padding: 5px;
-  margin: 10px 15px;
-  float: left;
+#home {
+  grid-area: hm;
+}
+#home > a {
+}
+#news {
+  grid-area: nw;
+}
+#contact {
+  grid-area: ct;
+}
+#about {
+  grid-area: at;
+}
+
+.nav > a {
+  display: grid;
+  color: #ffffff;
+  padding: 5% 0%;
   text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.25em;
 }
 nav > a:hover {
-  color: #000000;
+  color: #5f5f5f;
   background-color: #ffffff;
-}
-nav > a#about {
-  float: right;
+  transition: 0.5s;
 }
 
 .article {
   grid-area: article;
-  background-color: #deb887;
+  background-color: white;
   display: grid;
   grid-template-columns: 25% 65% 10%;
   grid-template-rows: auto;
@@ -74,7 +86,6 @@ nav > a#about {
     "content html  other"
     " .      css   other"
     " .       js   other";
-  align-content: space-between;
 }
 article > section {
   padding: 5%;
@@ -100,12 +111,14 @@ article > section > div {
 article > section#content {
   padding: 1%;
   grid-area: content;
-  background-color: #def2f1;
+  background-color: #ffffff;
 }
 article > section#content ul {
-  margin: 1%;
+  text-decoration: none;
+  margin: 2%;
+  background-color: #f5f5f5;
   border: 1px solid #000000;
-  border-radius: 4px;
+  border-radius: 2%;
   list-style-type: none;
 }
 article > section > div > img {
@@ -126,17 +139,20 @@ article > section > div > img {
   height: 128px;
 }
 div > ul {
-  margin-left: 6%;
+  margin-left: 5%;
 }
 
 div > ul > li {
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 #content ul > li {
-  padding: 3% 10%;
+  padding: 2% 5%;
 }
 #content ul > li + li {
-  padding: 3% 2% 2% 10%;
+  padding: 1% 2% 2% 10%;
+}
+#content  a {
+  text-decoration: none;
 }
 article > section#other {
   margin: 0;
@@ -145,16 +161,17 @@ article > section#other {
   grid-area: other;
   background-color: #8699ac;
 }
+
 div#to-top {
-  align-self: flex-end ;
+  align-self: end;
   justify-self: center;
 }
-.material-icons{
-font-size: 48px !important; 
-margin-bottom: 15px;
-color:#ffffff;
+.material-icons {
+  font-size: 40px !important;
+  margin-bottom: 50%;
+  color: #ffffff;
 }
-.material-icons:hover{
+.material-icons:hover {
   color: #5f5f5f;
 }
 .footer {
@@ -165,4 +182,20 @@ color:#ffffff;
 footer > div > p {
   color: #f0ffff;
   text-align: center;
+}
+/* @media screen and (min-width: 601px) {
+  
+  } */
+
+@media screen and (max-width: 600px) {
+  
+ .article {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    " html  other"
+    " css   other"
+    " js   other";
 }

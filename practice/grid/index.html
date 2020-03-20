@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
+    <link
       rel="shortcut icon"
       href="https://mpng.subpng.com/20180330/qsq/kisspng-web-development-source-code-computer-programming-c-coding-5abef12507dad9.7380270415224630130322.jpg "
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>HTML5 CSS3 JS</title>
   </head>
   <body class="container">
@@ -21,9 +23,9 @@
     </header>
 
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">News</a>
-      <a href="#">Contact</a>
+      <a id="home" href="#">Home</a>
+      <a id="news" href="#">News</a>
+      <a id="contact" href="#">Contact</a>
       <a id="about" href="">About</a>
     </nav>
 
@@ -118,10 +120,10 @@
             <li>створення інтерактивних форм;</li>
             <li>
               включення зображень, звуку, відео, та інших об'єктів до тексту
-            </li>
+            </li> <a name="history-html"></a>
           </ul>
 
-          <h2>Історія розвитку HTML</h2>
+          <h2>Історія розвитку HTML</h2> 
           <hr />
           <p>
             1980 року фізик Тім Бернерс-Лі, який на той час був співробітником
@@ -189,7 +191,7 @@
             має назву «HTML 4.01 Recommendation». Усі спірні питання та помилки
             цієї специфікації були офіційно визнані у списку друкарських
             помилок, опублікованому в 2001 році.
-          </p>
+          </p><a name="version"></a>
           <h2>Версії</h2>
           <hr />
           <p>
@@ -237,7 +239,7 @@
             </li>
             <li>
               <a href="https://uk.wikipedia.org/wiki/HTML5">HTML 5</a> (Working
-              Draft, 5 квітня 2008):] HTML 5 має новий словник, побудований на
+              Draft, 5 квітня 2008):HTML 5 має новий словник, побудований на
               основі HTML 4.01 та XHTML 1.0. Також перероблена і розширена
               пов'язана з HTML специфікація DOM.
             </li>
@@ -261,30 +263,31 @@
           </ul>
         </div>
       </section>
-      
+
       <section id="content">
-      <div>
-        <ul>
-        <li> Зміст
-            <li>1 Мова розмітки гіпертекстових документів (HTML)</li>
-            <li>1.1 Історія розвитку HTML</li>
-            <li>1.2 Версії</li>
-            <li>2 Каскадні таблиці стилів(CSS)</li>
-            <li>2.1 Переваги</li>
-            <li>2.2 Синтаксис</li>
-            <li>3 JavaScript (JS)</li>
-            <li>3.1 Історія</li>
-            <li>3.2 Стандартизація</li>
-      
-        </li>
-        </ul>
-      </div>
+        <div id="left-nav">
+          <ul><li>
+              Зміст
+             <li> <a href="#about_html">1. Мова розмітки гіпертекстових документів (HTML)</a> </li>
+             <li> <a href="#history-html">1.1 Історія розвитку HTML</a> </li>
+             <li> <a href="#version">1.2 Версії</a> </li>
+             <li> <a href="#about_css">2. Каскадні таблиці стилів(CSS)</a> </li>
+             <li> <a href="#preference">2.1 Переваги</a> </li>
+             <li> <a href="#syntax">2.2 Синтаксис</a> </li>
+             <li> <a href="#about_js">3. JavaScript (JS)</a> </li>
+             <li> <a href="#history_js">3.1 Історія</a> </li>
+             <li> <a href="#standardization">3.2 Стандартизація</a> </li>
+             </li>
+          </ul>
+        </div>
       </section>
 
       <section id="other">
-
-        <div id="to-top"><a href="#start_of_page"><i class="material-icons">arrow_upward</i></a> </div>
-     
+        <div id="to-top">
+          <a href="#start_of_page"
+            ><i class="material-icons">arrow_upward</i></a
+          >
+        </div>
       </section>
 
       <section id="about_css">
@@ -294,8 +297,8 @@
           <p>
             <b>CSS</b>(англ. <b><i>Cascading Style Sheets</i></b
             >, укр. Каскадні таблиці стилів) — це спеціальна мова стилю
-            сторінок], що використовується для опису їх зовнішнього вигляду.
-            Самі ж сторінки написані мовами розмітки даних.
+            сторінок, що використовується для опису їх зовнішнього вигляду. Самі
+            ж сторінки написані мовами розмітки даних.
           </p>
           <img
             src="http://www.myiconfinder.com/uploads/iconsets/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png"
@@ -373,7 +376,7 @@
             тобто, в якій послідовності і для яких елементів застосовуються
             стилі. Таким чином, використовується принцип каскадності, коли для
             елементів вказується лише та інформація про стилі, що змінилася або
-            не визначена загальнішими стилями.
+            не визначена загальнішими стилями. <a name="preference"></a>
           </p>
           <h2>Переваги</h2>
           <hr />
@@ -395,7 +398,7 @@
             передається, навантаження на сервер та канал передачі. Досягається
             за рахунок того, що сучасні браузери здатні кешувати
             (запам'ятовувати) інформацію про стилі і використовувати для всіх
-            сторінок, а не завантажувати для кожної.
+            сторінок, а не завантажувати для кожної. <a name="syntax"></a>
           </p>
           <h3>Синтаксис</h3>
           <p>
@@ -416,7 +419,7 @@
         </div>
       </section>
 
-       <section id="about_js">
+      <section id="about_js">
         <div id="about_js">
           <span><h1>JavaScript</h1></span>
           <hr />
@@ -472,7 +475,7 @@
             мовами, що мають відмінну семантику, хоча й мають схожі риси в
             стандартних бібліотеках та правилах іменування. Синтаксис обох мов
             отриманий «у спадок» від мови С, але семантика та дизайн JavaScript
-            є результатом впливу мов Self та Scheme.
+            є результатом впливу мов Self та Scheme. <a name="history_js"></a>
           </p>
 
           <h2>Історія</h2>
@@ -508,7 +511,7 @@
             впливом Cmm. Насправді, Брендан Айк ніколи не чув про Cmm до того,
             як він створив LiveScript Пізніше, Nombas зупинили розробку Cmm та
             почали використовувати JavaScript, а згодом брали участь у групі зі
-            стандартизації JavaScript.
+            стандартизації JavaScript. <a name="standardization"></a>
           </p>
           <h3>Стандартизація</h3>
           <p>
@@ -519,7 +522,7 @@
             опублікувала першу редакцію специфікації ECMA-262. Рік по тому, у
             червні 1998 року, щоб адаптувати специфікацію до стандарту
             ISO/IEC-16262, були внесені деякі зміни і випущена друга редакція.
-            Третя редакція побачила світ в грудні 1999 року./p>
+            Третя редакція побачила світ в грудні 1999 року.
           </p>
 
           <p>
@@ -600,7 +603,6 @@
           <p></p>
         </div>
       </section>
-
     </article>
 
     <footer class="footer">
