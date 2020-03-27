@@ -6,7 +6,7 @@ x1 = a + b;
 x2 = a - b;
 x3 = a * b;
 x4 = a / b;
-console.log("a =",a, "b = ",b);
+console.log("a =", a, "b = ", b);
 console.log("a + b = ", x1);
 console.log("a - b = ", x2);
 console.log("a * b = ", x3);
