@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+#addBtn {
+  width: 6em;
+  padding: 1%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#todoitem {
+  padding: 1%;
+  width: 50%;
+}
+input {
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#main-todo {
+  background-color: #3946fa;
+  color: #ffffff;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 1% 0% 1% 6%;
+  list-style-type: none;
+  background: #ffff4b;
+  font-size: 1.2em;
+  transition: 0.3s;
+  margin: 1%;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+ul li:nth-child(odd) {
+  background: #64d6fc;
+}
+ul li:hover {
+  background: #ffa500;
+}
+
+#doneListItem {
+  position: absolute;
+  bottom: auto;
+  top: auto;
+  left: 2%;
+  cursor: pointer;
+}
+ 
+#doneListItem:hover{
+  opacity: 1;
+  color: #00ff00;
+}
+
+#deleteListItem {
+  position: absolute;
+  cursor: pointer;
+  right: 2%;
+  opacity: 0.8;
+}
+
+#deleteListItem:hover {
+  color: #ff0000;
+}
