@@ -11,7 +11,6 @@ function addTodoItem() {
         newTodoItem.setAttribute("class", "list-item");
         newTodoItem.innerText = todoitem.value;
 
-        ////////////////////////////////////////////////////////////////////
 
         var newItemDone = document.createElement("span");
         newItemDone.setAttribute("class", "fa fa-check-square");
@@ -30,9 +29,9 @@ function addTodoItem() {
 
 
         newItemDone.addEventListener('click', todoItemDone, false)
-
+        btnSave.addEventListener("click", saveTodoList, false);
         newDeleteItem.addEventListener('click', todoItemRemove, false)
-        ////////////////////////////////////////////////////////////////////
+
         function todoItemDone() {
             if (newTodoItem.style.textDecoration == "line-through") {
                 newTodoItem.style.textDecoration = "";
@@ -47,6 +46,12 @@ function addTodoItem() {
             }
         }
 
+        function saveTodoList(e) {
+            if (todoItems.length != 0) {
+                localStorage.setItem("todolist", JSON.stringify(todoItems));
+                window.alert("To Do items has been saved");
+            }
+        }
     }
 
 }
