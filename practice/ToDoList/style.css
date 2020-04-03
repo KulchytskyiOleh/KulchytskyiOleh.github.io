@@ -10,7 +10,7 @@ body {
 #addBtn, #btnSave {
   width: 6em;
   padding: 1%;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 #todoitem {
