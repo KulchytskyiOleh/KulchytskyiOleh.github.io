@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курс валют</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="exchange_menu">
+        <div id="currency_header"><h2>Дізнатись курс валют</h2></div>
+        <div class="currency_selector">
+          <select name="currency" id="currency">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="PLN">Polish złoty</option>
+          </select>
+        </div>
+
+        <div class="date_header"><h2>Виберіть дату:</h2></div>
+        <div class="date">
+          <div class="input_date">
+            <input type="date" name="cdate" id="sdate" />
+            <br />
+            <input type="date" name="edate" id="edate" />
+          </div>
+        </div>
+        <a href=""></a>
+        <div class="find">
+          <input type="button" value="Пошук" id="btnCalc" />
+        </div>
+
+        <script src="main.js"></script>
+      </div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
