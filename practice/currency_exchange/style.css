@@ -79,6 +79,7 @@ input {
   grid-row: 3;
 }
 input#btnCalc {
+  outline: none;
   cursor: pointer;
   align-self: center;
   background-color: #41527a;
